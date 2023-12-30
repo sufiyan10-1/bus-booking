@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(48, 47, 47);
+    color: white;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    position: absolute;
+    top: 50%;
+    right: 40%;
+    transform: translateY(-50%);
+}
+.slections{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 10px;
+     font-size: 25px;
+}
+.options{
+    height: 30px;
+    font-size: 20px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+
+}
+ .seat{
+    height: 20px;
+    width: 30px;
+    background-color: rgb(104, 100, 100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+}
+.leftrow,.rightrow{
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.lastset{
+    display: flex;
+    gap: 15px;
+}
+.sold{
+    background-color: white;
+}
+.selected{
+    background-color: green;
+}
+.button
+{
+    cursor: pointer;
+    font-weight: bold;
+    height: 40px;
+    width: 110px;
+}
+p{
+    font-size: 20px;
+}
+@media (width < 412px) {
+    .main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        position: absolute;
+        bottom: 20%;
+        left: auto;
+        right: auto;
+        transform: translateY(-40%);  
+    }
+    p{
+        font-size: 15px;
+        flex: none;
+        display: inline;
+    }
+    .slections{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        font-size: 15px;
+   }
+   .options{
+       height: 30px;
+       font-size: 20px;
+   }
+   
+}
